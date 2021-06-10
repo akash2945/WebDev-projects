@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top:0;
+    cursor: pointer;
+}
+.navlist{
+    display: flex;
+    width: 70%;
+    align-items: center;
+}
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 30%;
+    border: solid grey 2px;
+    border-radius: 15px;
+}
+
+.navlist li{
+    list-style: none;
+    padding: 25px 25px;
+    
+}
+
+.navlist li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    
+}
+
+.navlist li a:hover{
+    text-decoration: none;
+    color: grey;
+    
+}
+
+.rightnav{
+     
+     width: 30%;
+     text-align: right;
+}
+
+#search{
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.background{
+   background: rgba(0, 0, 0, 0.7) url('back.jpg');
+   background-size: cover;
+   background-blend-mode: darken;
+}
+
+.firstsection{
+    height: 100vh;
+    
+}
+
+.firsthalf{
+    
+    justify-content: center;
+    width: 80%;
+    text-align: center;
+    font-size: 18px;
+}
+.boxmain{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: white;
+    max-width: 60%;
+    height: 65%;
+}
+.secondhalf{
+    width: 50%;
+}
+
+.secondhalf img{
+    border-radius: 10px;
+    width: 60%;
+     display: block;
+     margin: auto;
+     border: 2px solid black
+}
+.btn{
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    margin: 10px 5px;
+    background: none;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+
+}
+
+.text-big{
+    font-size: 25px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.text-small{
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn-sm{
+    vertical-align: middle;
+    padding: 5px 15px;
+    
+}
+
+.secondsection{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 100px;
+   
+   margin: auto;
+   max-width: 80%;
+   
+
+}
+.thumbnail img{
+    width: 320px;
+    border-radius: 6px;
+}
+.paras{
+    padding: 0px 50px;
+}
+.section-left{
+    flex-direction: row-reverse;
+}
+
+.sectiontag{
+    padding: 10px;
+}
+.sectionsubtag{
+    padding: 10px;
+}
+
+.contact{
+    background-color: #f6f5f4;
+    height:100%;
+}
+
+.text-contact{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+    padding: 20px 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.form{
+    margin:  40px auto;
+    max-width: 60%;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.form-input{
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid black;
+    font-size: 16px;
+    margin-bottom: 25px;
+    padding: 5px 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.btn-dark{
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 10px 5px;
+    color: black    ;
+    border: 1px solid black;
+    cursor: pointer;
+
+}
+
+.text-footer{
+    text-align: center;
+    margin: 15px;
+    padding: 30px 0px;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 6%;
+    top: 15px;
+    
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+@media only screen and (max-width:1020px){
+    .navlist{
+        flex-direction: column;
+    }
+
+    .navbar{
+        flex-direction: column;
+        transition: all 0.6s ease-out;
+        height: 475px;
+    }
+    .rightnav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+    .boxmain{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .secondsection{
+        flex-direction: column-reverse;
+    }
+    .burger{
+        display: block;
+    }
+    .text-big{
+        text-align: center;
+    }
+    .text-small{
+        text-align: center;
+    }
+    .btn{
+        text-align: center;
+    }
+    .h-nav{
+        height: 52px;
+        }
+    .v-class{
+        opacity: 0;
+    }
+    .thumbnail img{
+        max-width: 100%;
+    }
+
+    .paras{
+        padding: 0px;
+    }
+}   

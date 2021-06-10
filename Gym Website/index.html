@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akash Fitness</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@800&display=swap"
+    rel="stylesheet"
+  />
+  <body>
+    <header class="header">
+      <!-- Left box for logo -->
+      <div class="left">
+        <img src="logo.jpg" alt="" />
+        <div>Akash Fitness</div>
+      </div>
+      <!-- Mid box for navbar -->
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Fitness Calculator</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Right box for buttons -->
+      <div class="right">
+        <button class="btn" onclick="call1()">Call Us Now</button>
+        <button class="btn" onclick="email()">Email Us</button>
+      </div>
+    </header>
+    <div class="container">
+      <h1>Join the best gym of Delhi now</h1>
+      <form action="noaction.php">
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Name" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Age" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Gender" />
+        </div>
+
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Email Id" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Phone Number" />
+        </div>
+        <button class="btn">Register</button>
+      </form>
+    </div>
+
+    <div class="footer">
+      <div id="contact">Contact Us</div>
+      <div id="footerinfo">
+        Email : fitnessak@gmail.com
+        <br />
+        Phone : +91-0011223344
+        <br />
+        Facebook page : <a href="www.facebook.com">AKfitness</a>
+      </div>
+    </div>
+    <script>
+      function call1() {
+        alert("Our Contact Number - +910011223344");
+      }
+
+      function email() {
+        alert("Our Email Id - fitnessak@gmail.com");
+      }
+    </script>
+  </body>
+</html>
